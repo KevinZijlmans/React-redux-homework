@@ -5,8 +5,8 @@ import { allData } from './action/action';
 import { connect } from 'react-redux';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   this.state = {
     "Ivel Z3": {
       manufacturer: "Ivasim",
@@ -39,7 +39,6 @@ class App extends Component {
   updateSelection = (select) => {
     this.setState({state: select.target.value});
   }
-  
   render() {
     return (
       <div className="App">
